@@ -2,8 +2,6 @@
    ### Google authentication implemented
    ### RealTime live chat implemeted
    ### Add channel feature included
-   
-
-
+   ### Firebase used for the backend
 
 
