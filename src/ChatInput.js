@@ -14,8 +14,8 @@ function ChatInput({ channelName, channelId }) {
     if (channelId) {
       db.collection('rooms').doc(channelId).collection('messages').add({
         message: input,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        user: firebase.auth().currentUser ? null : user.diplayName,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp(), 
+        user: firebase.auth().currentUser ? null : user.diplayName,  //OR user: auth.currentUser ? null : user.diplayName, and import auth as import { auth } from 'firebase'
         userImage: user.photoURL,
       })
     }
